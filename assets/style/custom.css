@@ -1,0 +1,791 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Perfect";
+  src: url("../font/VIP Perfect Beloved VH/1FTV-VIP-Perfect-Beloved.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "iCiel Brittany Signature";
+  src: url("../font/Brittany Signature/iCielBrittanySignature-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mongolian Baiti";
+  src: url("../font/monbaiti.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SVN-Reliant";
+  src: url("../font/SVN-Reliant.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* UTM Centur Regular */
+@font-face {
+  font-family: "UTM Centur";
+  src: url("../font/UTM Centur/UTM Centur.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* UTM Centur Bold */
+@font-face {
+  font-family: "UTM Centur";
+  src: url("../font/UTM Centur/UTM CenturBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* UTM Centur Italic */
+@font-face {
+  font-family: "UTM Centur";
+  src: url("../font/UTM Centur/UTM CenturItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+/* UTM Centur Bold Italic */
+@font-face {
+  font-family: "UTM Centur";
+  src: url("../font/UTM CenturUTM CenturBoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+.mobile-only-container .mobile-intro-section .mobile-intro-content {
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mobile-only-container .mobile-intro-section .mobile-intro-content h1 {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 3.25rem */
+  letter-spacing: 0.05rem;
+}
+.mobile-only-container .mobile-intro-section .mobie-intro-name {
+  flex-direction: column;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(-12deg);
+  width: 11.6875rem;
+}
+.mobile-only-container .mobile-intro-section .mobie-intro-name h2 {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 2.6rem */
+  letter-spacing: 0.04rem;
+}
+.mobile-only-container .mobile-intro-section .mobie-intro-name h2:first-child {
+  text-align: start;
+}
+.mobile-only-container .mobile-intro-section .mobie-intro-name h2:last-child {
+  text-align: end;
+}
+.mobile-only-container .mobile-intro-section .mobie-intro-name span {
+  color: #333;
+  text-align: center;
+  font-family: "iCiel Brittany Signature", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 2.6rem */
+  letter-spacing: 0.04rem;
+}
+.mobile-only-container .mobie-intro-calendar {
+  padding: 3rem 1.5rem;
+}
+.mobile-only-container .mobie-intro-calendar .wedding-calendar {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.mobile-only-container .mobie-intro-calendar .wedding-calendar .title-script {
+  color: #333;
+  font-family: "Perfect", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 2.6rem */
+  letter-spacing: 0.04rem;
+}
+.mobile-only-container .mobie-intro-calendar .wedding-calendar .title-month {
+  color: #333;
+  font-family: "Mongolian Baiti";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 1.75rem */
+}
+.mobile-only-container .mobie-intro-calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-only-container .mobie-intro-calendar .calendar-grid {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 1.25rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+}
+.mobile-only-container .mobie-intro-calendar .calendar-grid .date {
+  width: 2rem;
+  color: #000;
+  text-align: center;
+  padding: 0.25rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.mobile-only-container .mobie-intro-calendar .calendar-grid .date.disabled {
+  color: #8E8E93;
+}
+.mobile-only-container .mobie-intro-calendar .calendar-grid div {
+  position: relative;
+}
+.mobile-only-container .mobie-intro-calendar .heart-day {
+  position: relative;
+}
+.mobile-only-container .mobie-intro-calendar .heart-day .img {
+  width: 55px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.mobile-only-container .mobie-intro-calendar .heart-day .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mobile-only-container .mobie-intro-calendar .heart-day span {
+  position: relative;
+  z-index: 2;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  color: white;
+  padding: 0.25rem;
+  width: 2rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container {
+  gap: 1.5rem;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* --------- ẢNH TRÊN (canh trái) ---------- */
+  /* --------- ẢNH DƯỚI (canh phải) ---------- */
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top,
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom {
+  width: 100%;
+  display: flex;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top {
+  justify-content: flex-start;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .image {
+  position: relative;
+  width: 15.625rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .image fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .image fieldset img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .text {
+  position: absolute;
+  bottom: 1.19rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .text span {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.3rem */
+  letter-spacing: 0.02rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-top .text h2 {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.95rem */
+  letter-spacing: 0.03rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom {
+  justify-content: flex-end;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .image {
+  position: relative;
+  width: 15.625rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .image fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .image fieldset img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .text {
+  position: absolute;
+  bottom: 1.19rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .text span {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.3rem */
+  letter-spacing: 0.02rem;
+}
+.mobile-only-container .mobie-image-decor .image-decor-container .image-decor-bottom .text h2 {
+  font-family: "Perfect", sans-serif;
+  color: #333;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.95rem */
+  letter-spacing: 0.03rem;
+}
+.mobile-only-container .mobie-information {
+  padding-top: 2.5rem;
+  padding-bottom: 3.44rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.mobile-only-container .mobie-information .invite-inner {
+  gap: 1.5rem;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-address .title-1 {
+  color: #432215;
+  text-align: center;
+  font-family: "UTM Centur", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.3rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-address .title-2 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.625rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-address .title-3 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.21875rem */
+  letter-spacing: -0.01875rem;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-address .title-4 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.95rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.38rem;
+  width: 100%;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .title-1 {
+  color: #432215;
+  text-align: center;
+  font-family: "UTM Centur", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.3rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .title-2 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.625rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .title-3 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.21875rem */
+  letter-spacing: -0.01875rem;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .title-4 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.95rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .title-5 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 4rem */
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .invite-date-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-only-container .mobie-information .invite-inner .invite-your-time .invite-date-row .invite-date-side .invite-date-text {
+  padding: 0.625rem;
+  border-bottom: 1px solid #432215;
+  border-top: 1px solid #432215;
+}
+.mobile-only-container .invite-page-2 {
+  padding: 3.5rem 0;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-letter-big {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 12.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 12.5rem */
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-top-row {
+  text-align: end;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-top-row .invite-letter-big--top {
+  position: relative;
+  text-align: end;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-top-row .invite-top-text {
+  position: absolute;
+  background: #FFF;
+  padding: 0.25rem 0.625rem;
+  top: 3.88rem;
+  z-index: 2;
+  right: 0;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-families {
+  padding: 1.5rem 1.5rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-families .invite-family--bride {
+  text-align: start;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-families .invite-family--groom {
+  text-align: end;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-families .invite-family p {
+  color: #3E2018;
+  font-family: "UTM Centur";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .invite-page-2 .invite-inner .announce {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.mobile-only-container .invite-page-2 .invite-inner .announce .invite-announce {
+  color: #3E2018;
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .invite-page-2 .invite-inner .announce .invite-couple {
+  padding: 0 3.69rem;
+  width: 100%;
+}
+.mobile-only-container .invite-page-2 .invite-inner .announce .invite-couple .invite-name {
+  color: #3E2018;
+  font-family: "UTM Centur";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.045rem;
+}
+.mobile-only-container .invite-page-2 .invite-inner .announce .invite-couple .invite-amp {
+  transform: translate(35%, 0%);
+  color: #3E2018;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-bottom-row {
+  display: flex;
+  align-items: center;
+  margin-top: 2.44rem;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-bottom-row .invite-ceremony {
+  text-align: end;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-bottom-row .invite-ceremony .title-1 {
+  color: #3E2018;
+  font-family: "UTM Centur";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-bottom-row .invite-ceremony .invite-date-main {
+  padding: 0.31rem 0;
+  color: #3E2018;
+  text-align: right;
+  font-family: "UTM Centur";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .invite-page-2 .invite-inner .invite-bottom-row .invite-ceremony .invite-date-sub {
+  color: #3E2018;
+  text-align: right;
+  font-family: "UTM Centur";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .time-countdown .content {
+  position: absolute;
+  margin: 0 1.69rem;
+  display: flex;
+  top: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.mobile-only-container .time-countdown .content .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.mobile-only-container .time-countdown .content .time h1 {
+  color: #333;
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 1.5rem */
+}
+.mobile-only-container .time-countdown .content .time .countdown-timer {
+  display: flex;
+  gap: 0.88rem;
+}
+.mobile-only-container .time-countdown .content .time .countdown-timer .time-item {
+  display: flex;
+  width: 3rem;
+  padding: 0.25rem 0.625rem 0.5rem 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  background: #FFF;
+}
+.mobile-only-container .time-countdown .content .time .countdown-timer .time-item .time-number {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 1.5rem */
+}
+.mobile-only-container .time-countdown .content .time .countdown-timer .time-item .time-label {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mobile-only-container .time-countdown .content .desc {
+  margin: 0 0.75rem;
+}
+.mobile-only-container .time-countdown .content .desc p {
+  color: #333;
+  text-align: center;
+  font-family: SVN-Reliant;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 1.225rem */
+  letter-spacing: -0.00875rem;
+}
+.mobile-only-container .map-wending {
+  padding-top: 3.5rem;
+}
+.mobile-only-container .map-wending .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.mobile-only-container .map-wending .content .address {
+  padding: 0 1.56rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-only-container .map-wending .content .address h2 {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 1.5rem */
+}
+.mobile-only-container .map-wending .content .address a {
+  color: var(--432215, #432215);
+  text-align: center;
+  font-family: "UTM Centur";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 1.3rem */
+}
+
+/* Không cho scroll khi đang hiển thị cửa */
+html.no-scroll,
+html.no-scroll body {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ================= CỬA MỞ ================= */
+.door-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f1ed;
+  overflow: hidden;
+}
+
+.door-left,
+.door-right {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #f5f1ed;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+.door-left {
+  left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.door-right {
+  right: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Khi mở cửa */
+.door-overlay.door-open .door-left {
+  animation: door-left-open 1s ease-in-out forwards;
+}
+
+.door-overlay.door-open .door-right {
+  animation: door-right-open 1s ease-in-out forwards;
+}
+
+@keyframes door-left-open {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes door-right-open {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* ================= NÚT NHẠC ================= */
+.music-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9000;
+}
+
+.music-toggle .icon {
+  position: absolute;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  font-size: 1.2rem;
+}
+
+/* Trạng thái mặc định: tắt nhạc */
+.music-toggle .icon-on {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.music-toggle .icon-off {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Khi đang phát nhạc */
+.music-toggle.is-playing .icon-on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.music-toggle.is-playing .icon-off {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* ================= TRÁI TIM RƠI ================= */
+#heart-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.heart {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("/assets/image/heart.png"); /* dùng lại icon trái tim của bạn */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  animation-name: heart-fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes heart-fall {
+  0% {
+    transform: translateY(-10vh) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) scale(1);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,8 @@
+/* Mobile-only container: hiển thị chỉ ở màn hình nhỏ (<=440px) */
+
+/* Site frame: cố định chiều rộng trang ở 440px và căn giữa */
+.site-frame{
+  width:440px;
+  margin:0 auto;
+}
+
