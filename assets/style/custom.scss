@@ -520,7 +520,14 @@
                     padding: 0.25rem 0.625rem;
                     top: 3.88rem;
                     z-index: 2;
-                    right: 0;
+                    right: 35px;
+                    color: #3E2018;
+                    font-family: "UTM Centur";
+                    font-size: 2.25rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.045rem;
                 }
             }
 
@@ -805,18 +812,29 @@ html.no-scroll body {
 .door-overlay.door-open .door-left {
     animation: door-left-open 1s ease-in-out forwards;
 }
+
 .door-overlay.door-open .door-right {
     animation: door-right-open 1s ease-in-out forwards;
 }
 
 @keyframes door-left-open {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes door-right-open {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* ================= NÚT NHẠC ================= */
@@ -849,6 +867,7 @@ html.no-scroll body {
     opacity: 0;
     transform: scale(0.8);
 }
+
 .music-toggle .icon-off {
     opacity: 1;
     transform: scale(1);
@@ -859,6 +878,7 @@ html.no-scroll body {
     opacity: 1;
     transform: scale(1);
 }
+
 .music-toggle.is-playing .icon-off {
     opacity: 0;
     transform: scale(0.8);
@@ -878,7 +898,8 @@ html.no-scroll body {
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url('/assets/image/heart.png'); /* dùng lại icon trái tim của bạn */
+    background-image: url('/assets/image/heart.png');
+    /* dùng lại icon trái tim của bạn */
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.9;
@@ -892,9 +913,11 @@ html.no-scroll body {
         transform: translateY(-10vh) scale(0.6);
         opacity: 0;
     }
+
     15% {
         opacity: 1;
     }
+
     100% {
         transform: translateY(110vh) scale(1);
         opacity: 0;
