@@ -51,6 +51,11 @@
   font-weight: 700;
   font-style: italic;
 }
+.mobile-only-container {
+  width: 100%;
+  max-width: 440px;
+  overflow-x: hidden;
+}
 .mobile-only-container .mobile-intro-section .mobile-intro-content {
   top: 2rem;
   left: 50%;
