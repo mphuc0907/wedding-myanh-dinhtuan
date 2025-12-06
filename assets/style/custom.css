@@ -129,10 +129,10 @@
 .mobile-only-container .mobie-intro-calendar .wedding-calendar .title-month {
   color: #333;
   font-family: "Mongolian Baiti";
-  font-size: 1.75rem;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: normal;
   /* 1.75rem */
 }
 .mobile-only-container .mobie-intro-calendar .calendar-header {
@@ -357,7 +357,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.38rem;
+  gap: 1rem;
   width: 100%;
 }
 .mobile-only-container .mobie-information .invite-inner .invite-your-time .title-1 {
@@ -408,7 +408,7 @@
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 2rem;
   /* 4rem */
 }
 .mobile-only-container .mobie-information .invite-inner .invite-your-time .invite-date-row {
@@ -432,7 +432,7 @@
   font-size: 12.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 80%;
   /* 12.5rem */
 }
 .mobile-only-container .invite-page-2 .invite-inner .invite-top-row {
@@ -446,7 +446,7 @@
   position: absolute;
   background: #FFF;
   padding: 0.25rem 0.625rem;
-  top: 3.88rem;
+  top: 3rem;
   z-index: 2;
   right: 23px;
   color: #3E2018;
@@ -458,7 +458,7 @@
   letter-spacing: 0.045rem;
 }
 .mobile-only-container .invite-page-2 .invite-inner .invite-families {
-  padding: 1.5rem 1.5rem 1.25rem;
+  padding: 0 1.5rem 32px;
   display: flex;
   justify-content: space-between;
 }
@@ -486,7 +486,7 @@
   color: #3E2018;
   text-align: center;
   font-family: "UTM Centur";
-  font-size: 0.875rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -564,13 +564,13 @@
   gap: 1rem;
 }
 .mobile-only-container .time-countdown .content .time h1 {
-  color: #333;
-  text-align: center;
+  color: #3E2018;
   font-family: "UTM Centur";
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  line-height: normal;
+  letter-spacing: 0.045rem;
   /* 1.5rem */
 }
 .mobile-only-container .time-countdown .content .time .countdown-timer {
@@ -613,8 +613,8 @@
 .mobile-only-container .time-countdown .content .desc p {
   color: #333;
   text-align: center;
-  font-family: SVN-Reliant;
-  font-size: 0.875rem;
+  font-family: "SVN-Reliant", sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
