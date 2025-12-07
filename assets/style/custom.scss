@@ -773,16 +773,7 @@
     }
 }
 
-/* Không cho scroll khi đang hiển thị cửa */
-html.no-scroll,
-html.no-scroll body {
-    overflow: hidden;
-    height: 100%;
-}
-
-/* ================= CỬA MỞ ================= */
-
-.door-overlay {
+/* ================= CỬA MỞ ================= */.door-overlay {
     position: fixed;
     inset: 0;
     z-index: 9999;

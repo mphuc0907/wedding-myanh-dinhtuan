@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     /* ========== CỬA MỞ ========== */
     const overlay = document.getElementById('door-overlay');
 
-
     function openDoor() {
         if (!overlay || overlay.classList.contains('door-open')) return;
 
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500);
     }
 
-    // tự mở cửa sau 500ms và bỏ khựng scroll ngay
+    // tự mở cửa sau 500ms
     setTimeout(openDoor, 500);
 
     // Auto-click music button sau 500ms
@@ -76,8 +75,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.removeEventListener('keydown', tryStartMusic);
     }
 
-    // bật lắng nghe tương tác sau khi trang load 1 tí (cho cửa mở xong)
-    setTimeout(addInteractionListeners, 1000);
+    // bật lắng nghe tương tác ngay lập tức (dự phòng nếu auto-play bị block)
+    addInteractionListeners();
 
 
 
