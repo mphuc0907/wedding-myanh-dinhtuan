@@ -100,15 +100,15 @@
             <section class="mobie-intro-calendar">
                 <div class="wedding-calendar">
                     <div class="calendar-header">
-                        <h2 class="title-script" data-aos="fade-right" data-aos-delay="150">
+                        <h2 class="title-script">
                             Our wedding day
                         </h2>
-                        <h2 class="title-month" data-aos="fade-left" data-aos-delay="150">
+                        <h2 class="title-month">
                             Tháng 12
                         </h2>
                     </div>
 
-                    <div class="calendar-grid" data-aos="fade-up" data-aos-duration="500">
+                    <div class="calendar-grid" >
                         <!-- header day -->
                         <div class="date">Sun</div>
                         <div class="date">Mon</div>
@@ -125,7 +125,7 @@
                         <div class="date">3</div>
                         <div class="date">4</div>
                         <div class="date">5</div>
-                        <div data-aos="fade-up" data-aos-duration="1150" class="date">6</div>
+                        <div class="date">6</div>
 
                         <div class="date">7</div>
                         <div class="date">8</div>
@@ -178,7 +178,7 @@
                                 <img src="/assets/image/DSC_4659 1.png" alt="Mỹ Anh & Đinh Tuấn">
                             </fieldset>
                         </div>
-                        <div class="text" data-aos="fade-up" data-aos-delay="250">
+                        <div class="text">
                             <span>Cô dâu</span>
                             <h2>Mỹ Anh</h2>
                         </div>
@@ -190,7 +190,7 @@
                                 <img src="/assets/image/DSC_4659 1 (1).png" alt="Mỹ Anh & Đinh Tuấn">
                             </fieldset>
                         </div>
-                        <div class="text" data-aos="fade-up" data-aos-delay="250">
+                        <div class="text">
                             <span>Chú rể</span>
                             <h2>Đinh Tuấn</h2>
                         </div>
@@ -206,21 +206,19 @@
                             TRÂN TRỌNG KÍNH MỜI
                         </p>
 
-                        <p class="invite-line invite-line--big invite-line--upper title-2" data-aos="fade-up"
-                            data-aos-delay="200">
+                        <p class="invite-line invite-line--big invite-line--upper title-2">
                             QUÝ KHÁCH
                         </p>
 
-                        <p class="invite-line title-3" data-aos="fade-up" data-aos-delay="300">
+                        <p class="invite-line title-3" >
                             Đến dự buổi tiệc chung vui cùng gia đình chúng tôi tại:
                         </p>
 
-                        <p class="invite-line invite-line--big invite-line--upper title-4" data-aos="fade-up"
-                            data-aos-delay="350">
+                        <p class="invite-line invite-line--big invite-line--upper title-4" >
                             TƯ GIA NHÀ GÁI
                         </p>
 
-                        <p class="invite-line title-1" data-aos="fade-up" data-aos-delay="400">
+                        <p class="invite-line title-1">
                             Thôn Phúc Trại, Xã Thượng Phúc, TP. Hà Nội
                         </p>
                     </div>
@@ -401,13 +399,41 @@
     <script src="/assets/js/coundonw.js"></script>
     <script src="/assets/js/oke.js"></script>
     <script>
-        AOS.init({
-            duration: 1200,          // lâu hơn 1 chút cho mượt
-            easing: 'ease-out-cubic',// chuyển động êm hơn
-            offset: 80,              // bắt đầu animate sớm hơn 1 chút
-            once: true               // chỉ animate 1 lần, đỡ nhấp nháy
-        });
+        (function(){
+            // Disable or reduce AOS on small/low-power devices and strip heavy usages
+            function isSmallScreen(){
+                return window.innerWidth <= 440 || /Mobi|Android/i.test(navigator.userAgent);
+            }
 
+            // Remove data-aos from selectors that tend to be repetitive/heavy
+            function stripHeavyAos(){
+                const heavySelectors = [
+                    '.calendar-grid [data-aos]',
+                    '.countdown-timer [data-aos]',
+                    '.date[data-aos]',
+                    '.invite-family [data-aos]'
+                ];
+                heavySelectors.forEach(sel => {
+                    document.querySelectorAll(sel).forEach(el => el.removeAttribute('data-aos'));
+                });
+            }
+
+            if (isSmallScreen()){
+                // On small screens, remove all AOS attributes to keep scrolling smooth
+                document.querySelectorAll('[data-aos]').forEach(el => el.removeAttribute('data-aos'));
+            } else {
+                // On desktop, just strip heavy repetitive elements
+                stripHeavyAos();
+            }
+
+            AOS.init({
+                duration: 700,
+                easing: 'ease-out-cubic',
+                offset: 40,
+                once: true,
+                disable: function(){ return isSmallScreen(); }
+            });
+        })();
     </script>
 
 </body>
