@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ========== CỬA MỞ ========== */
     const overlay = document.getElementById('door-overlay');
-    html.classList.add('no-scroll');
+
 
     function openDoor() {
         if (!overlay || overlay.classList.contains('door-open')) return;
@@ -12,21 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         setTimeout(() => {
             overlay.style.display = 'none';
-            html.classList.remove('no-scroll');
         }, 500);
     }
 
-    // tự mở cửa sau 2.5s
+    // tự mở cửa sau 500ms và bỏ khựng scroll ngay
     setTimeout(openDoor, 500);
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const openMusic = document.getElementById('music-toggle');
-
-        // Mở cửa sau 1 giây
+    // Auto-click music button sau 500ms
+    const openMusic = document.getElementById('music-toggle');
+    if (openMusic) {
         setTimeout(() => {
             openMusic.click();
         }, 500);
-    });
+    }
 
     /* ========== NHẠC NỀN ========== */
     const music = document.getElementById('bg-music');
