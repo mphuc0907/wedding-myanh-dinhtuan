@@ -1,21 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const html = document.documentElement;
 
-    /* ========== CỬA MỞ ========== */
-    const overlay = document.getElementById('door-overlay');
-
-    function openDoor() {
-        if (!overlay || overlay.classList.contains('door-open')) return;
-
-        overlay.classList.add('door-open');
-
-        setTimeout(() => {
-            overlay.style.display = 'none';
-        }, 500);
-    }
-
-    // tự mở cửa sau 500ms
-    setTimeout(openDoor, 500);
+    /* ========== CỬA MỞ (removed) ========== */
+    // Door overlay and open-door animation removed — keeping only decorative effects
 
     // Auto-click music button sau 500ms
     const openMusic = document.getElementById('music-toggle');
