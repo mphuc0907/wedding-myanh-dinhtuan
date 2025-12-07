@@ -682,6 +682,9 @@
   font-size: 1.2rem;
 }
 
+/* Lightweight CSS animations to replace AOS for images and simple elements */
+/* AOS will be used for animations; removed the lightweight CSS animation fallback */
+
 /* Trạng thái mặc định: tắt nhạc */
 .music-toggle .icon-on {
   opacity: 0;
